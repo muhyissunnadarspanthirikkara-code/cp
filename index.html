@@ -3,45 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Shop | Smart Choice</title>
+    <title>Muhammed's Watch Store</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div class="navbar">
             <div class="logo">Watch<span>Shop</span></div>
             <div class="search-bar">
-                <input type="text" placeholder="Search for brands, styles and more">
+                <input type="text" placeholder="Search for brands...">
                 <button><i class="fa fa-search"></i></button>
             </div>
             <div class="nav-links">
-                <a href="https://instagram.com/muhammedcp_" target="_blank"><i class="fab fa-instagram"></i> @muhammedcp_</a>
-                <button class="login-btn">Login</button>
+                <a href="https://instagram.com/muhammedcp_" target="_blank"><i class="fab fa-instagram"></i> muhammedcp_</a>
             </div>
         </div>
     </header>
 
-    <!-- Product Section -->
     <main>
-        <h2>Latest Watch Collections</h2>
-        <div class="product-container" id="product-list">
-            <!-- Products will be loaded here via JavaScript -->
+        <h1 class="title-shop">Premium Collections</h1>
+        
+        <div class="bd-grid" id="product-list">
+            <!-- Product 1 -->
+            <article class="card">
+                <div class="card-name">CASIO</div>
+                <img src="https://assets.casio.com/content/dam/casio/global/standard/gshock/products/ga-2100-1a1/ga-2100-1a1.png" alt="Watch" class="card-img">
+                <div class="card-prices">
+                    <div class="card-price">
+                        <span class="card-price-before">₹4,999</span>
+                        <span class="card-price-now">₹2,499</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="card">
+                <div class="card-name">TITAN</div>
+                <img src="https://staticimg.titan.co.in/Titan/Catalog/1805NM02_1.jpg?pimg=true&impolicy=pqlow" alt="Watch" class="card-img">
+                <div class="card-prices">
+                    <div class="card-price">
+                        <span class="card-price-before">₹3,500</span>
+                        <span class="card-price-now">₹1,999</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="card">
+                <div class="card-name">ROLEX</div>
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-majesty/c_limit,w_800/v1/catalogue/2024/upright-c/m126233-0039" alt="Watch" class="card-img">
+                <div class="card-prices">
+                    <div class="card-price">
+                        <span class="card-price-before">₹15,000</span>
+                        <span class="card-price-now">₹8,999</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </article>
         </div>
     </main>
 
-    <!-- Contact Floating Buttons -->
-    <div class="contact-buttons">
-        <a href="https://wa.me/917907303634" class="whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i> Chat with Us
+    <!-- Floating Contact -->
+    <div class="contact-links">
+        <a href="https://wa.me/917907303634" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat Now
         </a>
     </div>
 
     <footer>
-        <p>&copy; 2026 Watch Shop. Contact: +91 7907303634 | Instagram: muhammedcp_</p>
+        <p>Contact: +91 7907303634 | Instagram: @muhammedcp_</p>
     </footer>
 
     <script src="script.js"></script>
